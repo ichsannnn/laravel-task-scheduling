@@ -19,7 +19,7 @@ class Data extends Command
      *
      * @var string
      */
-    protected $description = 'Creating new random data';
+    protected $description = 'Insert new random data';
 
     /**
      * Create a new command instance.
