@@ -1,5 +1,5 @@
 # Laravel Task Scheduling with Cron Job
-Penjadwalan tugas Laravel menggunakan CronJob. Pada project ini, perintah Cron akan dijalankan tiap menit, tetapi Laravel tetap akan menjalankan _command_ sesuai dengan [jadwal](https://laravel.com/docs/5.5/scheduling#schedule-frequency-options) yang sudah ditetapkan, dalam hal ini 5 menit.
+Penjadwalan tugas Laravel menggunakan Cron Job. Pada project ini, perintah Cron akan dijalankan tiap menit, tetapi Laravel tetap akan menjalankan _command_ sesuai dengan [jadwal](https://laravel.com/docs/5.5/scheduling#schedule-frequency-options) yang sudah ditetapkan, dalam hal ini 5 menit.
 
 ## Instalasi
 * Buka terminal linux
@@ -18,7 +18,7 @@ $ php artisan migrate
 ```bash
 $ crontab -e
 ```
-* Perintah tersebut akan menampilkan editor pada terminal. Masukan kode berikut pada line terakhir.
+* Perintah tersebut akan menampilkan _nano text editor_ pada terminal. Masukan kode berikut pada line terakhir.
 ```bash
 * * * * * php /lokasi-project-anda/artisan schedule:run >> /dev/null 2>&1
 ```
