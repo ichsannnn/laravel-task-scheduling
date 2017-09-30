@@ -24,8 +24,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')
-        //          ->hourly();
+        $schedule->command('data:insert')->everyFiveMinutes()->timezone('Asia/Jakarta'); // Menjalankan command php artisan data:insert setiap 5 menit
+        // $schedule->command('data:insert')->everyMinute()->timezone('Asia/Jakarta'); // Menjalankan command php artisan data:insert setiap 1 menit
     }
 
     /**
